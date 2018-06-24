@@ -14,7 +14,7 @@ public class Test{
 		Date registrationDate;
 		
 		PatientInfo(){
-			System.out.println("PatientInfo created");
+			System.out.println(getClass().getName());
 		}
 	}
 	
@@ -24,7 +24,7 @@ public class Test{
 		int room;
 		
 		Doctor(){
-			System.out.println("Doctor created");
+			System.out.println(getClass().getName());
 		}
 	}
 	
@@ -36,7 +36,7 @@ public class Test{
 		boolean status;
 		
 		Case(){
-			System.out.println("Case created");
+			System.out.println(getClass().getName());
 		}
 	}
 	
@@ -49,7 +49,7 @@ public class Test{
 		String result;
 		
 		Analysis() {
-			System.out.println("Analysis created");
+			System.out.println(getClass().getName());
 		}
 	}
 	
@@ -64,7 +64,7 @@ public class Test{
 			analysisHistory = new ArrayList<Analysis>();
 			visitHistory = new ArrayList<Case>();
 			patientInfo = new PatientInfo();
-			System.out.println("Empty PatientCard created");
+			System.out.println(getClass().getName());
 		}
 	}
 	
@@ -74,7 +74,7 @@ public class Test{
 		PatientCard card = new PatientCard();
 		card.analysisHistory.add(new Analysis());
 		card.visitHistory.add(new Case());
-		System.out.println("Tested");
+		System.out.println(getClass().getName());
 	}
 	
 	public static void main(String[] args)
