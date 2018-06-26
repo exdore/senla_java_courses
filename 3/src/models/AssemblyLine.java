@@ -5,9 +5,9 @@ import interfaces.IProduct;
 
 public class AssemblyLine implements IAssemblyLine {
 
-	FirstStep firstStep;
-	SecondStep secondStep;
-	ThirdStep thirdStep;
+	private FirstStep firstStep;
+	private SecondStep secondStep;
+	private ThirdStep thirdStep;
 	
 	public AssemblyLine(){
 		firstStep = new FirstStep();

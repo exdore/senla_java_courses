@@ -5,9 +5,9 @@ import interfaces.IProductPart;
 
 public class Product implements IProduct {
 
-	public ProductPart firstPart;
-	public ProductPart secondPart;
-	public ProductPart thirdPart;
+	private ProductPart firstPart;
+	private ProductPart secondPart;
+	private ProductPart thirdPart;
 	
 	Product(ProductPart first, ProductPart second, ProductPart third){
 		installFirstPart(first);
@@ -22,21 +22,21 @@ public class Product implements IProduct {
 	public void installFirstPart(IProductPart part) {
 		System.out.println("First part installed:");
 		firstPart = (ProductPart) part;
-		System.out.println(firstPart.name + " installed");
+		System.out.println(firstPart.getName() + " installed");
 	}
 
 	@Override
 	public void installSecondPart(IProductPart part) {
 		System.out.println("Second part installed:");
 		secondPart = (ProductPart) part;
-		System.out.println(secondPart.name + " installed");
+		System.out.println(secondPart.getName() + " installed");
 	}
 
 	@Override
 	public void installThirdPart(IProductPart part) {
 		System.out.println("Third part installed:");
 		thirdPart = (ProductPart) part;
-		System.out.println(thirdPart.name + " installed");
+		System.out.println(thirdPart.getName() + " installed");
 	}
 
 }

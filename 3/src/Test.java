@@ -6,5 +6,4 @@ public class Test {
 		AssemblyLine line = new AssemblyLine();
 		line.assembleProduct(new Product());
 	}
-
 }

@@ -6,6 +6,6 @@ public class ThirdStep implements ILineStep {
 
 	public ProductPart buildProductPart() {
 		System.out.println("Third part constructed");
-		return new ProductPart("башня");
+		return new ProductPart("Р‘Р°С€РЅСЏ");
 	}
 }
